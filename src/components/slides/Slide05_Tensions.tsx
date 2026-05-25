@@ -9,7 +9,7 @@ export const Slide05_Tensions = () => {
 
       {/* Horizontal layout for tensions */}
       <div className="w-full max-w-7xl flex items-start justify-center gap-6 flex-1">
-        {tensionsData.map((tension, index) => (
+        {tensionsData.map((tension) => (
           <div key={tension.id} className="flex-1 min-w-0">
             <TensionSplitCard
               title={tension.title}
