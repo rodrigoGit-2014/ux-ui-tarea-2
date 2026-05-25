@@ -3,7 +3,7 @@ import { briefData } from '../../data/slidesData';
 
 export const Slide07_Brief = () => {
   return (
-    <div className="w-full h-full gradient-health-subtle flex items-center justify-center px-8">
+    <div className="w-full h-full gradient-health flex items-center justify-center px-8">
       <div className="max-w-5xl text-center">
         <motion.h1
           initial={{ opacity: 0, scale: 0.98 }}

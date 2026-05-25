@@ -1,5 +1,5 @@
 # Speech de Presentación
-## Sistema de Confianza Digital para Enfermedades Poco Frecuentes
+## Plataforma de Confianza Digital para Enfermedades Poco Frecuentes
 
 Duración estimada: 4 minutos (~35 segundos por slide)
 
@@ -8,7 +8,7 @@ Duración estimada: 4 minutos (~35 segundos por slide)
 ## SLIDE 1: Portada (Cover)
 **Duración: ~30 segundos**
 
-"Buenos días. Hoy les voy a presentar un sistema de confianza digital diseñado específicamente para enfermedades poco frecuentes.
+"Buenos días. Hoy les voy a presentar una plataforma de confianza digital diseñada específicamente para enfermedades poco frecuentes.
 
 Estamos hablando de crowdfunding confiable, donde cada campaña médica está verificada, donde la transparencia no es opcional, y donde la tecnología sirve para construir puentes reales entre familias que necesitan ayuda y donantes que quieren generar impacto genuino."
 
@@ -17,11 +17,13 @@ Estamos hablando de crowdfunding confiable, donde cada campaña médica está ve
 ---
 
 ## SLIDE 2: Objetivo (Objective)
-**Duración: ~35 segundos**
+**Duración: ~40 segundos**
 
-"Nuestro objetivo es claro y contundente: construir un ecosistema donde cada donación genere impacto real y verificable en familias que enfrentan enfermedades poco frecuentes.
+"Nuestro objetivo es claro y contundente: construir un ecosistema donde cada donación genere **impacto real** y **verificable** en familias que enfrentan enfermedades poco frecuentes.
 
-No estamos hablando de otra plataforma de crowdfunding más. Estamos hablando de un ecosistema completo, donde donantes, familias, profesionales médicos, y tecnología trabajan juntos para transformar vidas de manera tangible y medible."
+Esto significa tres cosas fundamentales: Primero, impacto real – cada donación genera cambios tangibles. Segundo, completamente verificable – transparencia total en cada paso. Y tercero, centrado en familias – apoyo directo donde más se necesita.
+
+No estamos hablando de otra plataforma de crowdfunding más. Estamos hablando de un ecosistema completo diseñado para transformar vidas."
 
 [PAUSA - Avanzar al siguiente slide]
 
@@ -45,7 +47,7 @@ Cuarto, **inteligencia artificial** para detectar fraude y automatizar procesos 
 
 "Esta es nuestra **Red de Valor Estratégica**. Como pueden ver, es una arquitectura de actores interconectados donde cada conexión genera valor compartido.
 
-En el centro está la **Plataforma ONG**, actuando como garante de imparcialidad y confianza. Conectada directamente con las **familias** que necesitan apoyo, los **donantes** que quieren ayudar, el área de **finanzas y compliance** que asegura todo esté en regla, el equipo de **UX/UI** que hace la experiencia accesible, y el **sistema de IA** que valida y protege.
+En el centro está la **Plataforma ONG**, actuando como garante de imparcialidad y confianza. Conectada directamente con las **familias** que necesitan apoyo, los **donantes** que quieren ayudar, el área de **finanzas y compliance** que asegura todo esté en regla, el equipo de **UX/UI** que hace la experiencia accesible, y la **plataforma de IA** que valida y protege.
 
 No es solo software. Es un ecosistema vivo donde cada actor tiene un rol fundamental y estratégico."
 
@@ -56,7 +58,7 @@ No es solo software. Es un ecosistema vivo donde cada actor tiene un rol fundame
 ## SLIDE 5: Tensiones Estratégicas
 **Duración: ~45 segundos**
 
-"Diseñar este sistema implicó enfrentar tres tensiones estratégicas críticas.
+"Diseñar esta plataforma implicó enfrentar tres tensiones estratégicas críticas.
 
 Primera tensión: **Emoción versus Transparencia**. Las historias humanas mueven a la acción, pero los datos duros construyen confianza sostenible. ¿Cómo diseñar una experiencia que active ambas?
 
@@ -94,7 +96,7 @@ Y quinto: el ecosistema necesita una **ONG central que garantice imparcialidad y
 
 Un lugar donde la tecnología sirve a la humanidad, no al revés. Donde cada donación cuenta. Donde cada familia es escuchada. Donde la transparencia construye confianza.
 
-Sistema de Confianza Digital para Enfermedades Poco Frecuentes.
+Plataforma de Confianza Digital para Enfermedades Poco Frecuentes.
 
 Gracias."
 

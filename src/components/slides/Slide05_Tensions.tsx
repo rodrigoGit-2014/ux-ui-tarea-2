@@ -4,7 +4,7 @@ import { tensionsData } from '../../data/slidesData';
 
 export const Slide05_Tensions = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center px-8 py-8 bg-neutral-50">
+    <div className="w-full h-full flex flex-col items-center justify-center px-8 py-8 gradient-health">
       <SlideTitle>Tensiones Estratégicas</SlideTitle>
 
       {/* Horizontal layout for tensions */}

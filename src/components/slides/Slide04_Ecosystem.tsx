@@ -7,7 +7,7 @@ export const Slide04_Ecosystem = () => {
   const otherNodes = ecosystemData.filter((actor) => !actor.isCenter);
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center px-8 py-8 bg-neutral-50">
+    <div className="w-full h-full flex flex-col items-center justify-center px-8 py-8 gradient-health">
       <SlideTitle>Red de Valor Estratégica</SlideTitle>
 
       {/* Ecosystem Visualization */}
