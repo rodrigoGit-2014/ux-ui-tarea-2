@@ -1,4 +1,4 @@
-import { CoverData, ObjectiveData, Pillar, EcosystemActor, Tension, Finding, BriefData } from '../types';
+import { CoverData, ObjectiveData, Pillar, EcosystemActor, Tension, Finding, BriefData, StrategicMapData } from '../types';
 
 export const coverData: CoverData = {
   title: "Plataforma de confianza digital para enfermedades poco frecuentes",
@@ -87,6 +87,73 @@ export const ecosystemData: EcosystemActor[] = [
     connections: ["plataforma"]
   }
 ];
+
+export const strategicMapData: StrategicMapData = {
+  title: "Mapa de actores y oportunidades",
+  subtitle: "Estrategias y tácticas para establecer alianzas de confianza a largo plazo",
+  columns: [
+    { id: "gubernamentales", label: "Gubernamentales", color: "blue" },
+    { id: "ong", label: "ONG (Social)", color: "green" },
+    { id: "medicas", label: "Inf. Médicas", color: "orange" },
+    { id: "ux-ia", label: "UX/Interfaz de IA", color: "purple" },
+    { id: "sistema-ia", label: "SISTEMA DE IA", color: "cyan" },
+    { id: "financiero", label: "Financiero Legal", color: "pink" }
+  ],
+  rows: [
+    {
+      id: "familias",
+      label: "FAMILIAS",
+      color: "green",
+      cells: [
+        { id: "f1", title: "Información verificada", description: "sobre tratamientos y especialistas", icon: "FileCheck" },
+        { id: "f2", title: "Empoderamiento", description: "para tomar decisiones médicas informadas", icon: "Users" },
+        { id: "f3", title: "Conexión con comunidad", description: "de familias con casos similares", icon: "Heart" },
+        { id: "f4", title: "Interface adaptativa", description: "que reduce estrés cognitivo", icon: "Sparkles" },
+        { id: "f5", title: "Tutoriales guiados", description: "y asistencia inteligente", icon: "Bot" },
+        { id: "f6", title: "Orientación legal", description: "y acceso a recursos sociales", icon: "Scale" }
+      ]
+    },
+    {
+      id: "donantes",
+      label: "DONANTES",
+      color: "amber",
+      cells: [
+        { id: "d1", title: "Validación oficial", description: "de campañas por autoridades", icon: "Shield" },
+        { id: "d2", title: "Respaldo colectivo", description: "y credibilidad comunitaria", icon: "Users" },
+        { id: "d3", title: "Certificación médica", description: "de diagnósticos y tratamientos", icon: "FileHeart" },
+        { id: "d4", title: "Dashboards claros", description: "de impacto y progreso", icon: "BarChart" },
+        { id: "d5", title: "Reportes automatizados", description: "y alertas de fraude", icon: "BellRing" },
+        { id: "d6", title: "Trazabilidad financiera", description: "completa y auditable", icon: "Receipt" }
+      ]
+    },
+    {
+      id: "plataforma",
+      label: "PLATAFORMA ONG",
+      color: "violet",
+      cells: [
+        { id: "p1", title: "Alianzas estratégicas", description: "con entidades gubernamentales", icon: "Handshake" },
+        { id: "p2", title: "Colaboración sectorial", description: "con otras ONGs", icon: "Network" },
+        { id: "p3", title: "Convenios médicos", description: "para validación profesional", icon: "Building2" },
+        { id: "p4", title: "Estándares de diseño", description: "centrado en el usuario", icon: "Palette" },
+        { id: "p5", title: "Infraestructura ética", description: "de IA y algoritmos transparentes", icon: "Cpu" },
+        { id: "p6", title: "Compliance regulatorio", description: "y auditorías externas", icon: "CheckCircle" }
+      ]
+    },
+    {
+      id: "uxui",
+      label: "UX UI",
+      color: "rose",
+      cells: [
+        { id: "u1", title: "Simplicidad regulada", description: "que cumple estándares oficiales", icon: "Zap" },
+        { id: "u2", title: "Accesibilidad universal", description: "para todos los usuarios", icon: "Eye" },
+        { id: "u3", title: "Lenguaje claro", description: "validado por profesionales", icon: "MessageCircle" },
+        { id: "u4", title: "Componentes reutilizables", description: "y sistema de diseño robusto", icon: "Box" },
+        { id: "u5", title: "Interfaces predictivas", description: "que anticipan necesidades", icon: "Sparkles" },
+        { id: "u6", title: "Flujos seguros", description: "sin fricción innecesaria", icon: "Lock" }
+      ]
+    }
+  ]
+};
 
 export const tensionsData: Tension[] = [
   {

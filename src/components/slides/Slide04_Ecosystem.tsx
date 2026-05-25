@@ -1,87 +1,69 @@
 import { SlideTitle } from '../ui/SlideTitle';
-import { EcosystemNode } from '../ui/EcosystemNode';
-import { ecosystemData } from '../../data/slidesData';
+import { StrategyMapCell } from '../ui/StrategyMapCell';
+import { strategicMapData } from '../../data/slidesData';
 
 export const Slide04_Ecosystem = () => {
-  const centerNode = ecosystemData.find((actor) => actor.isCenter);
-  const otherNodes = ecosystemData.filter((actor) => !actor.isCenter);
-
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center px-8 py-8 gradient-health">
-      <SlideTitle>Red de Valor Estratégica</SlideTitle>
+    <div className="w-full h-full flex flex-col items-center justify-center px-6 py-6 gradient-health overflow-auto">
+      <div className="w-full max-w-[95vw]">
+        <div className="text-center mb-4">
+          <SlideTitle delay={0}>{strategicMapData.title}</SlideTitle>
+          <p className="text-sm text-neutral-600 -mt-6">
+            {strategicMapData.subtitle}
+          </p>
+        </div>
 
-      {/* Ecosystem Visualization */}
-      <div className="relative w-full max-w-5xl flex-1 flex items-center justify-center">
-        <div className="relative w-full aspect-square max-h-[600px] bg-white rounded-3xl shadow-card border border-neutral-200">
+        {/* Strategy Map Table */}
+        <div className="bg-white rounded-xl shadow-card p-4 overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr>
+                <th className="p-2 text-left w-32 border-b-2 border-neutral-200">
+                  <span className="text-xs font-bold text-primary-700">ACTORES</span>
+                </th>
+                {strategicMapData.columns.map((column) => (
+                  <th key={column.id} className="p-2 border-b-2 border-neutral-200">
+                    <span className="text-xs font-bold text-neutral-700 block text-center">
+                      {column.label}
+                    </span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {strategicMapData.rows.map((row, rowIndex) => (
+                <tr key={row.id} className="border-b border-neutral-100">
+                  <td className="p-2 align-top bg-neutral-50">
+                    <div className="sticky left-0">
+                      <span className="text-xs font-bold text-neutral-700 block">
+                        {row.label}
+                      </span>
+                    </div>
+                  </td>
+                  {row.cells.map((cell, cellIndex) => (
+                    <td key={cell.id} className="p-2 align-top">
+                      <StrategyMapCell
+                        title={cell.title}
+                        description={cell.description}
+                        icon={cell.icon}
+                        color={row.color}
+                        delay={0.05 * (rowIndex * 6 + cellIndex)}
+                      />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
-          {/* SVG for connections */}
-          <svg className="absolute inset-0 w-full h-full">
-            <defs>
-              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.6" />
-                <stop offset="50%" stopColor="#60A5FA" stopOpacity="0.9" />
-                <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.6" />
-              </linearGradient>
-            </defs>
-
-            {/* Draw all connections */}
-            {centerNode && otherNodes.map((node) => (
-              <g key={`line-${node.id}`}>
-                {/* Shadow for depth */}
-                <line
-                  x1={`${centerNode.position.x}%`}
-                  y1={`${centerNode.position.y}%`}
-                  x2={`${node.position.x}%`}
-                  y2={`${node.position.y}%`}
-                  stroke="#93C5FD"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                  opacity="0.3"
-                />
-                {/* Main line */}
-                <line
-                  x1={`${centerNode.position.x}%`}
-                  y1={`${centerNode.position.y}%`}
-                  x2={`${node.position.x}%`}
-                  y2={`${node.position.y}%`}
-                  stroke="url(#lineGradient)"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-              </g>
-            ))}
-          </svg>
-
-          {/* Nodes */}
-          <div className="absolute inset-0">
-            {/* Center Node */}
-            {centerNode && (
-              <EcosystemNode
-                id={centerNode.id}
-                label={centerNode.label}
-                position={centerNode.position}
-                isCenter={true}
-                delay={0}
-              />
-            )}
-
-            {/* Other Nodes */}
-            {otherNodes.map((actor) => (
-              <EcosystemNode
-                key={actor.id}
-                id={actor.id}
-                label={actor.label}
-                position={actor.position}
-                delay={0}
-              />
-            ))}
-          </div>
+        {/* Footer Note */}
+        <div className="mt-3 text-center">
+          <p className="text-xs text-neutral-500">
+            <span className="font-semibold text-primary-600">ENFOQUE GENERAL:</span> Confianza • Transparencia • Empatía • Eficiencia
+          </p>
         </div>
       </div>
-
-      <p className="text-sm text-neutral-500 text-center mt-4">
-        La Plataforma ONG actúa como garante central de confianza
-      </p>
     </div>
   );
 };

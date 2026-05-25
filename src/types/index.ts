@@ -42,3 +42,30 @@ export interface BriefData {
   subtitle: string;
   closing: string;
 }
+
+export interface StrategyCell {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ActorColumn {
+  id: string;
+  label: string;
+  color: string;
+}
+
+export interface StrategyRow {
+  id: string;
+  label: string;
+  color: string;
+  cells: StrategyCell[];
+}
+
+export interface StrategicMapData {
+  title: string;
+  subtitle: string;
+  columns: ActorColumn[];
+  rows: StrategyRow[];
+}
